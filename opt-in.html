@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMS Opt-In — Cary Hernandez</title>
+  <style>
+    :root { --text: #1a1a1a; --muted: #555; --border: #e5e5e5; --bg: #fafafa; --accent: #0b5fff; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); margin: 0; padding: 2rem 1rem; }
+    main { max-width: 42rem; margin: 0 auto; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 2rem; }
+    h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+    .brand { color: var(--muted); margin: 0 0 1.5rem; }
+    h2 { font-size: 1.1rem; margin: 1.25rem 0 0.5rem; }
+    ol, ul { padding-left: 1.25rem; }
+    li { margin: 0.35rem 0; }
+    a { color: var(--accent); }
+    .box { background: #f6f8fa; border: 1px solid var(--border); border-radius: 6px; padding: 1rem; margin: 1rem 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Cary Hernandez</h1>
+    <p class="brand">Sole proprietor — SMS alert opt-in</p>
+
+    <h2>Who may opt in</h2>
+    <p>
+      Only the business owner (Cary Hernandez) may receive messages from this service.
+      There is no public signup. No marketing list. No third-party recipients.
+    </p>
+
+    <h2>What you are opting in to</h2>
+    <p>
+      Optional SMS <strong>account notifications</strong> when a publicly published U.S.
+      30-year mortgage rate (Mortgage News Daily daily survey) falls below a threshold
+      configured by the owner. Messages are transactional/personal alerts, not promotions.
+    </p>
+
+    <h2>How opt-in works</h2>
+    <ol>
+      <li>The owner decides to enable personal mortgage rate SMS alerts.</li>
+      <li>The owner voluntarily provides <strong>their own</strong> mobile number in private account configuration (Twilio and automation settings).</li>
+      <li>No message is sent until alerts are enabled and a threshold condition occurs.</li>
+    </ol>
+
+    <h2>Message frequency</h2>
+    <p>At most <strong>one SMS per day</strong> when an alert condition is met; often zero messages.</p>
+
+    <h2>Sample alert message</h2>
+    <motion class="box" aria-label="Sample message">
+      <p style="margin:0;font-family:ui-monospace,monospace;font-size:0.95rem;">
+        Mortgage alert: MND 30Y fixed is 6.250% (below threshold 6.500%). Prior row: -0.020. ~Week: -0.110.
+      </p>
+    </div>
+
+    <h2>Opt-out</h2>
+    <p>
+      The owner may stop messages at any time by disabling alerts or removing their phone
+      number from configuration. Reply <strong>STOP</strong> to any message to opt out (handled by carrier/Twilio).
+    </p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:caryhernandez3@gmail.com">caryhernandez3@gmail.com</a></p>
+
+    <p>
+      <a href="index.html">Business home</a> ·
+      <a href="privacy.html">Privacy policy</a>
+    </p>
+  </main>
+</body>
+</html>
